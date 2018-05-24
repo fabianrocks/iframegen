@@ -5,7 +5,7 @@
 <title>IFrame Generator</title>
 </head>
 
-<body>
+<body height="100%">
   Beispiel: "https://*.*.com/ch/de/job-suche"<br>
   Kunden-URL: <input type="text" id="url_iframe"><br>
   <button type="button" onclick="getIframeUrls();">IFrame erzeugen</button><br>
@@ -13,10 +13,10 @@
   IFrame ohne Logo: <p id="ol"></p>
   <br>
   Vorschau mit Logo:<br>
-  <div id="prev_ml" height="500px"></div>
+  <div id="prev_ml" height="50%"></div>
   <br>
   Vorschau ohne Logo:<br>
-  <div id="prev_ol" height="500px"></div>
+  <div id="prev_ol" height="50%"></div>
   <script>
     function getIframeUrls(){
       var url_base = document.getElementById("url_iframe").value;
