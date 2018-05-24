@@ -11,11 +11,19 @@
   <button type="button" onclick="getIframeUrls();">IFrame erzeugen</button><br>
   IFrame mit Logo: <p id="ml"></p>
   IFrame ohne Logo: <p id="ol"></p>
+  <br>
+  Vorschau mit Logo:<br>
+  <p id="prev_ml"></p>
+  <br>
+  Vorschau ohne Logo:<br>
+  <p id="prev_ol"></p>
   <script>
     function getIframeUrls(){
       var url_base = document.getElementById("url_iframe").value;
       document.getElementById("ml").innerText = '<iframe src="'+url_base+'" width="100%" height="100%" frameborder="0" scrolling="auto"></iframe>';
       document.getElementById("ol").innerText = '<iframe src="'+url_base+'?layout=partners_iframe_header" width="100%" height="100%" frameborder="0" scrolling="auto"></iframe>';
+      document.getElementById("prev_ml").innerHTML = '<iframe src="'+url_base+'" width="100%" height="100%" frameborder="0" scrolling="auto"></iframe>';
+      document.getElementById("prev_ol").innerHTML = '<iframe src="'+url_base+'?layout=partners_iframe_header" width="100%" height="100%" frameborder="0" scrolling="auto"></iframe>';
     }
   </script>
 </body>
